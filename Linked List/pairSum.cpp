@@ -26,6 +26,8 @@ void pairSum(node* head, int x){
         if((start -> data) + (end -> data) == x){
             f = true;
             cout << '(' << start -> data << ", " << end -> data << ')' << endl;
+            start = start -> next;
+            end = end -> prev;
         }
         else{
             if((start -> data) + (end -> data) < x)
