@@ -49,7 +49,7 @@ class queue{
     }
 
     bool isEmpty(){
-        if(front == -1)
+        if(front == rear)
             return true;
         return false;
     }
