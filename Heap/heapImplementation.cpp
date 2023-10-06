@@ -43,11 +43,11 @@ class heap{
             while(i < size){
                 int left = 2*i;
                 int right = 2*i+1;
-                if(left < size and arr[left] < arr[i]){
+                if(left < size and arr[i] < arr[left]){
                     swap(arr[i], arr[left]);
                     i = left;
                 }
-                else if(right < size and arr[right] < arr[i]){
+                else if(right < size and arr[i] < arr[right]){
                     swap(arr[i], arr[right]);
                     i = right;
                 }
